@@ -1,0 +1,24 @@
+{
+  "name": "nik-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsc && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Objective-Enterprises/nik-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Objective-Enterprises/nik-ts/issues"
+  },
+  "homepage": "https://github.com/Objective-Enterprises/nik-ts#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
