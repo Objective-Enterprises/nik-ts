@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tsc && node dist/index.js",
-    "devHome": "npx tsc && node dist/recreate.js"
+    "devHome": "npx tsc && node dist/assignments/01_Mar2_2026/recreate.js"
   },
   "repository": {
     "type": "git",
