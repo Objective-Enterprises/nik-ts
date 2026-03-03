@@ -1,16 +1,39 @@
+const bakeryVan = {
+  destination: 'bakery',
+  cargo: 5
+}
+
+const schoolVan = {
+  destination: 'school',
+  cargo: ['Dorothy', 'Zelda', 'Tallulah']
+}
+
 interface Van <T> {
   destination: string,
   cargo: T
 }
+
+type Bags = number;
+
+type Passengers = string[];
 
 function deliver <T> (van: Van<T>) {
   console.log('Delivery arrived at', van.destination)
   return van.cargo
 }
 
-const bakeryVan = {
-  destination: 'bakery',
-  cargo: 5
+function receiveBags (bags: Bags) {
+  console.log(bags, 'bags received')
 }
 
-deliver(bakeryVan)
+function receivePassengers (passengers: Passengers) {
+  const joined = passengers.join(', ')
+  console.log('Passengers received:', joined)
+}
+
+
+const bakeryDelivery = deliver(bakeryVan)
+receiveBags(bakeryDelivery)
+
+const schoolDelivery = deliver(schoolVan)
+receivePassengers(schoolDelivery)
