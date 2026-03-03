@@ -13,20 +13,20 @@ interface Van <T> {
   cargo: T
 }
 
-type Bags = number;
+// type Bags = number;
 
-type Passengers = string[];
+// type Passengers = string[];
 
 function deliver <T> (van: Van<T>) {
   console.log('Delivery arrived at', van.destination)
   return van.cargo
 }
 
-function receiveBags (bags: Bags) {
+function receiveBags (bags: number) {
   console.log(bags, 'bags received')
 }
 
-function receivePassengers (passengers: Passengers) {
+function receivePassengers (passengers: string[]) {
   const joined = passengers.join(', ')
   console.log('Passengers received:', joined)
 }
