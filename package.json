@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tsc && node dist/index.js"
+    "dev": "npx tsc && node dist/index.js",
+    "devHome": "npx tsc && node dist/recreate.js"
   },
   "repository": {
     "type": "git",
